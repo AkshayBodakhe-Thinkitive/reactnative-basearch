@@ -24,19 +24,17 @@ import { useAppDispatch } from '../../store/hooks';
 import { getResponsiveFontSize, getResponsiveHeight, getResponsiveWidth } from '../../utils/responsiveUtils';
 import HomeScreen from '../../domain/home/screens/HomeScreen';
 import AppointmentScreen from '../../domain/appointment/screens/AppointmentScreen';
+import ProfileScreen from '../../domain/profile/screens/ProfileScreen';
+import ChatScreen from '../../domain/chat/screens/ChatScreen';
 
 
 const BottomBar = () => {
   const dispatch = useAppDispatch();
 
-  // const show = useAppSelector(
-  //   (state: RootState) => state.medicalrecord.showRecordOptionMenu,
-  // );
 
   const [show,setShow] = useState(false)
 
   const showMedicalRecordOptions = () => {
-    // dispatch(setshowRecordOptionMenu(!show));
     setShow(!show)
   };
 
@@ -210,21 +208,6 @@ const BottomBar = () => {
 export default BottomBar;
 
 
-export const ProfileScreen = () => {
-  return (
-    <View>
-      <Text>ProfileScreen</Text>
-    </View>
-  )
-}
-
-export const ChatScreen = () => {
-  return (
-    <View>
-      <Text>ChatScreen</Text>
-    </View>
-  )
-}
 
 
 

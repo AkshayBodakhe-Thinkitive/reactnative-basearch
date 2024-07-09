@@ -45,7 +45,7 @@ const ReadyToJoin = ({navigation, route}: JoinScreenProps) => {
         </Text>
         {/*  providerpic need to be updated */}
         <ProfilePictureComponent
-          imageUrl={''}
+          imageUrl={AppItem?.Provider?.profilePicture}
           firstName={AppItem?.Provider?.firstName}
           lastName={AppItem?.Provider?.lastName}
           imageContainerStyles={styles.imageContainerStyles}

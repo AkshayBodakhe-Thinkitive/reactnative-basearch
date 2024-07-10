@@ -19,4 +19,6 @@ export const AppNavConstants = {
     // zoom screens
     READY_TO_JOIN : 'readytojoin',
     CALL_SCREEN : 'callscreen',
+
+    EDIT_PROF : 'editprofile',
  }

@@ -9,19 +9,23 @@ import {Ionicons} from '../../components/Icons/Ionicons';
 import MaterialCommunityIcons from '../../components/Icons/MaterialCommunityIcons';
 import LogoutModal from '../../domain/auth/components/LogoutModal/LogoutModal';
 import {MaterialIcons} from '../../components/Icons/MaterialIcons';
-import {BottomNavConstants} from '../../constants/NavConstants';
+import {AppNavConstants, BottomNavConstants} from '../../constants/NavConstants';
 import {colors} from '../../constants/Colors';
 import {getResponsiveFontSize} from '../../utils/responsiveUtils';
 import CustomDrawerItem from './CustomDrawerItem';
 import ProfilePictureComponent from '../../components/ProfilePicture/ProfilePicture';
+import { useNavigation } from '@react-navigation/native';
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
   const [showLogoutModal, setShowLogoutModal] = useState(false);
 
+  const navigation = useNavigation<any>()
+
   const logoutFun = () => {
     // Handle logout functionality
+    navigation.navigate('Auth')
     setShowLogoutModal(false);
   };
 
@@ -48,7 +52,7 @@ const DrawerNavigator = () => {
         icon: (
           <Ionicons name={'person-outline'} size={21} color={colors.grey66} />
         ),
-        // onPress: () => props.navigation.navigate(AppNavConstants.PROVIDER_LIST),
+        onPress: () => props.navigation.navigate(AppNavConstants.PROVIDER_LIST),
       },
       {
         label: 'Appointment',
@@ -67,7 +71,7 @@ const DrawerNavigator = () => {
         icon: (
           <MaterialIcons name={'payment'} size={21} color={colors.grey66} />
         ),
-        onPress: () => props.navigation.navigate(BottomNavConstants.CHAT),
+        // onPress: () => props.navigation.navigate(BottomNavConstants.CHAT),
       },
     ];
 

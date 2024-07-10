@@ -10,10 +10,14 @@ import CustomText from '../../../components/Text/CustomText';
 import { FontType } from '../../../constants/FontType';
 import { EvilIcons } from '../../../components/Icons/EvilIcons';
 import ProfileTabNavigator from '../../../navigation/TopTabNavigators/ProfileTabNavigator';
+import { AppNavConstants } from '../../../constants/NavConstants';
+import { useNavigation } from '@react-navigation/native';
 
 const ProfileScreen = () => {
 
     const patientData = PatientProfileData
+
+    const navigation = useNavigation<any>()
 
   return (
     <View style={styles.container}>
@@ -45,7 +49,7 @@ const ProfileScreen = () => {
         </CustomText>
         <TouchableOpacity
           style={{flexDirection: 'row',alignItems:"center",}}
-        //   onPress={() => navigation.navigate(AppNavConstants.EDIT_PROF)}
+          onPress={() => navigation.navigate(AppNavConstants.EDIT_PROF)}
           >
           <EvilIcons name="pencil" size={responsiveFontSize(2)} style={styles.pencil} />
           <CustomText style={styles.editProfileText}>Edit Profile</CustomText>

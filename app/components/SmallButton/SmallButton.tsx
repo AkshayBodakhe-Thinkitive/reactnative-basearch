@@ -9,7 +9,7 @@ import {
 import {colors} from '../../constants/Colors';
 import { getResponsiveFontSize, getResponsiveHeight } from '../../utils/responsiveUtils';
 import { FontType } from '../../constants/FontType';
-// import {FontType} from '../../constants/FontType';
+
 
 interface SmallButtonProps {
   title: string;

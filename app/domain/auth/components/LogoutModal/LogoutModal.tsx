@@ -2,11 +2,11 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import ModalPopup from '../../../../components/ModalPopup/ModalPopup';
 import { MaterialIcons } from '../../../../components/Icons/MaterialIcons';
-import { getResponsiveFontSize, getResponsiveHeight } from '../../../../utils/responsiveUtils';
 import { colors } from '../../../../constants/Colors';
 import CustomText from '../../../../components/Text/CustomText';
 import Row from '../../../../components/Row/Row';
 import SmallButton from '../../../../components/SmallButton/SmallButton';
+import { responsiveFontSize, responsiveHeight } from 'react-native-responsive-dimensions';
 
 
 interface LogoutModalProps {
@@ -22,13 +22,13 @@ const LogoutModal: React.FC<LogoutModalProps> = ({show, setShow, onLogout}) => {
         <MaterialIcons
           name="logout"
           color={colors.black}
-          size={getResponsiveFontSize(10)}
+          size={responsiveFontSize(10)}
         />
         <CustomText
-          fontSize={getResponsiveFontSize(2)}
+          fontSize={responsiveFontSize(2)}
           style={{
             textAlign: 'center',
-            marginBottom: getResponsiveHeight(2),
+            marginBottom: responsiveHeight(2),
             marginTop: '5%',
             color: colors.black,
           }}>
@@ -41,7 +41,7 @@ const LogoutModal: React.FC<LogoutModalProps> = ({show, setShow, onLogout}) => {
           title="Cancel"
           containerStyle={{
             width: '46%',
-            height: getResponsiveHeight(5),
+            height: responsiveHeight(5),
             borderWidth: 0.5,
           }}
           onPress={() => setShow(false)}
@@ -51,11 +51,11 @@ const LogoutModal: React.FC<LogoutModalProps> = ({show, setShow, onLogout}) => {
           title={'Logout'}
           containerStyle={{
             width: '46%',
-            height: getResponsiveHeight(5),
-            borderColor: colors.primary,
+            height: responsiveHeight(5),
+            borderColor: colors.red300,
             borderWidth: 0.5,
           }}
-          textStyle={{color: colors.primary}}
+          textStyle={{color: colors.red300}}
           onPress={onLogout}
         />
       </Row>

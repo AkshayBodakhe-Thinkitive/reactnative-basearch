@@ -1,14 +1,11 @@
 import {
   Animated,
-  Button,
   Image,
   ImageBackground,
   Keyboard,
   Platform,
   Text,
-  TextInput,
   TouchableOpacity,
-  View,
 } from 'react-native';
 import React, {useEffect, useRef, useState} from 'react';
 import {CurvedBottomBar} from 'react-native-curved-bottom-bar';

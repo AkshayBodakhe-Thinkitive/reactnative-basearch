@@ -7,4 +7,8 @@ export const FamilyDetailsStyles = StyleSheet.create({
       margin: 5,
       marginBottom: 60,
     },
+    listContainer : {
+      paddingBottom: 30,
+      marginBottom: 30,
+    },
 })

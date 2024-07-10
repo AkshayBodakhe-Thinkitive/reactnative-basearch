@@ -9,6 +9,7 @@ import ProvidersListScreen from '../../domain/home/screens/ProvidersListScreen';
 import { AppNavConstants } from '../../constants/NavConstants';
 import ReadyToJoin from '../../domain/zoom/screens/ReadyToJoin';
 import { CallScreen } from '../../domain/zoom/screens/CallScreen';
+import EditProfileScreen from '../../domain/profile/screens/EditProfileScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +33,11 @@ const AppNavigator = () => {
         <Stack.Screen
           name={AppNavConstants.CALL_SCREEN}
           component={CallScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={AppNavConstants.EDIT_PROF}
+          component={EditProfileScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

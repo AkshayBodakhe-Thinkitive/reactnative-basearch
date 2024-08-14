@@ -87,7 +87,7 @@ const HomeScreen = () => {
                 source={ImagePath.homeBackgroundImage}
                 style={styles.homeBgImage}>
                 <View style={styles.container2}>
-                  <Text style={styles.logoText}>thinkEMR</Text>
+                  <Text style={styles.logoText}>customEHR</Text>
                   <Text style={styles.welcomeTxt}>
                     Welcome {patientData?.firstName} 😊
                   </Text>

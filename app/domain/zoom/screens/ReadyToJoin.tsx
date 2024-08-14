@@ -30,7 +30,7 @@ const ReadyToJoin = ({navigation, route}: JoinScreenProps) => {
   const ProviderName = `${AppItem?.Provider?.firstName} ${AppItem?.Provider?.lastName}`;
 
   const navigateToCall = () => {
-    navigation.navigate(AppNavConstants.CALL_SCREEN,params)
+    // navigation.navigate(AppNavConstants.CALL_SCREEN,params)
   }
 
   return (

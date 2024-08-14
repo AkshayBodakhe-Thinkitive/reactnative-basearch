@@ -17,7 +17,7 @@ const UpcomingAppointments = () => {
   return (
     <View>
       <FlatList
-        data={appointmentsStaticData.concat(appointmentsStaticData)}
+        data={appointmentsStaticData}
         refreshControl={
           <RefreshControl
             refreshing={refreshing}

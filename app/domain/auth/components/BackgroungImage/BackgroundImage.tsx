@@ -17,7 +17,7 @@ const AuthBackgroundImage = () => {
         <View style={styles.greetContainer}>
           <View style={styles.greetTxtContainer}>
             <Text style={styles.welcomeTxt}>Welcome to</Text>
-            <Text style={styles.welcomeTxt}>ThinkEMR</Text>
+            <Text style={styles.welcomeTxt}>customEHR</Text>
           </View>
           <View>
             <ImageBackground

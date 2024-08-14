@@ -32,7 +32,7 @@ const LogoutModal: React.FC<LogoutModalProps> = ({show, setShow, onLogout}) => {
             marginTop: '5%',
             color: colors.black,
           }}>
-          {'Logging out will delete all your data from this device!'}
+          {'Are you sure you want to log out?'}
         </CustomText>
       </View>
       <Row style={{justifyContent: 'space-between'}}>

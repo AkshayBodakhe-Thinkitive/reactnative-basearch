@@ -1,4 +1,4 @@
-import { IAuth } from "../../domain/auth/interfaces/AuthInterfaces";
+import { IAuth } from "../../interfaces/AuthInterfaces";
 
 
 export interface AppState {

@@ -61,7 +61,7 @@ export const TextInputStyles = StyleSheet.create({
     },
     errorText: {
         color: colors.red300,
-        fontSize: responsiveFontSize(1),
+        fontSize: responsiveFontSize(1.5),
         position: 'absolute',
         bottom: '-40%',
 

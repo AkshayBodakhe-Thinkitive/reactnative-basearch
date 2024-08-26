@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Splashscreen from '../../domain/auth/screens/Splashscreen';
 import AuthNavigator from './AuthNavigator';
+import DrawerNavigator from '../DrawerNavigators/DrawerNavigator';
 // import DrawerNavigator from '../DrawerNavigators/DrawerNavigator';
 // import ProvidersListScreen from '../../domain/home/screens/ProvidersListScreen';
 // import { AppNavConstants } from '../../constants/NavConstants';
@@ -19,8 +20,8 @@ const AppNavigator = () => {
       <Stack.Navigator initialRouteName="SplashScreen" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="SplashScreen" component={Splashscreen} />
         <Stack.Screen name="Auth" component={AuthNavigator} />
-        {/* <Stack.Screen name="Main" component={DrawerNavigator} />
-        <Stack.Screen
+        <Stack.Screen name="Main" component={DrawerNavigator} />
+        {/* <Stack.Screen
           name={AppNavConstants.PROVIDER_LIST}
           component={ProvidersListScreen}
           options={{animation: 'none'}}

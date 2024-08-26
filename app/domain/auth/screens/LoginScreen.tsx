@@ -58,9 +58,10 @@ const LoginScreen = () => {
 
     if (Object.keys(errors).length === 0) {
       // const response = await dispatch(signInAction({username, password}));
+      navigation.navigate('Main')
       const respose = 'OK';
       if (!respose) {
-        // handle error
+      
       }
     } else {
       setErrors(errors);

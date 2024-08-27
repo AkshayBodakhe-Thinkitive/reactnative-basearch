@@ -8,8 +8,8 @@ import DrawerNavigator from '../DrawerNavigators/DrawerNavigator';
 import ProvidersListScreen from '../../domain/home/screens/ProvidersListScreen';
 import {AppNavConstants} from '../../constants/NavConstants';
 import EditProfileScreen from '../../domain/profile/screens/EditProfileScreen';
-// import ReadyToJoin from '../../domain/zoom/screens/ReadyToJoin';
-// import { CallScreen } from '../../domain/zoom/screens/CallScreen';
+import ReadyToJoin from '../../domain/zoom/screens/ReadyToJoin';
+import { CallScreen } from '../../domain/zoom/screens/CallScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,7 +27,7 @@ const AppNavigator = () => {
           component={ProvidersListScreen}
           options={{animation: 'none'}}
         />
-        {/*    <Stack.Screen
+           <Stack.Screen
           name={AppNavConstants.READY_TO_JOIN}
           component={ReadyToJoin}
           options={{headerShown: false}}
@@ -36,7 +36,7 @@ const AppNavigator = () => {
           name={AppNavConstants.CALL_SCREEN}
           component={CallScreen}
           options={{headerShown: false}}
-        />*/}
+        />
         <Stack.Screen
           name={AppNavConstants.EDIT_PROF}
           component={EditProfileScreen}

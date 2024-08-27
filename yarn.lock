@@ -1641,6 +1641,13 @@
 "@types/prop-types@*":
   version "15.7.12"
 
+"@types/react-native@0.62.16":
+  version "0.62.16"
+  resolved "https://registry.npmjs.org/@types/react-native/-/react-native-0.62.16.tgz"
+  integrity sha512-0f5MF4zzqZpZpDmwTmGS0Pd206k2K3rsVjaz0/iuBPZkpWC9r8+/A6WvTTJXgfP2mhRUcMfAqEY0iyz7Xk75qw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-test-renderer@^18.0.0":
   version "18.3.0"
   dependencies:
@@ -1781,6 +1788,14 @@
 
 "@ungap/structured-clone@^1.2.0":
   version "1.2.0"
+
+"@zoom/react-native-videosdk@^1.12.5":
+  version "1.12.5"
+  resolved "https://registry.npmjs.org/@zoom/react-native-videosdk/-/react-native-videosdk-1.12.5.tgz"
+  integrity sha512-42l1sTL9qczhBEGJUwlCwWaxQNhJpGIpFnzjIZyTMSVrPTt8phgntWdNFwuch6Wj+mRdg41bu4rgooDCg/O31A==
+  dependencies:
+    assert "^2.0.0"
+    yarn "^1.22.18"
 
 abort-controller@^3.0.0:
   version "3.0.0"
@@ -1931,6 +1946,17 @@ arraybuffer.prototype.slice@^1.0.3:
 
 asap@~2.0.6:
   version "2.0.6"
+
+assert@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/assert/-/assert-2.1.0.tgz"
+  integrity sha512-eLHpSK/Y4nhMJ07gDaAzoX/XAKS8PSaojml3M0DM4JpV1LAi5JOJ/p6H/XWrl8L+DzVEvVCW1z3vWAaB9oTsQw==
+  dependencies:
+    call-bind "^1.0.2"
+    is-nan "^1.3.2"
+    object-is "^1.1.5"
+    object.assign "^4.1.4"
+    util "^0.12.5"
 
 ast-types@0.15.2:
   version "0.15.2"
@@ -2100,7 +2126,7 @@ buffer@^5.5.0:
 bytes@3.0.0:
   version "3.0.0"
 
-call-bind@^1.0.2, call-bind@^1.0.5, call-bind@^1.0.6, call-bind@^1.0.7:
+call-bind@^1.0.0, call-bind@^1.0.2, call-bind@^1.0.5, call-bind@^1.0.6, call-bind@^1.0.7:
   version "1.0.7"
   dependencies:
     es-define-property "^1.0.0"
@@ -3244,6 +3270,14 @@ invariant@^2.2.4:
   dependencies:
     loose-envify "^1.0.0"
 
+is-arguments@^1.0.4:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/is-arguments/-/is-arguments-1.1.1.tgz"
+  integrity sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==
+  dependencies:
+    call-bind "^1.0.2"
+    has-tostringtag "^1.0.0"
+
 is-array-buffer@^3.0.4:
   version "3.0.4"
   dependencies:
@@ -3315,7 +3349,7 @@ is-fullwidth-code-point@^3.0.0:
 is-generator-fn@^2.0.0:
   version "2.1.0"
 
-is-generator-function@^1.0.10:
+is-generator-function@^1.0.10, is-generator-function@^1.0.7:
   version "1.0.10"
   dependencies:
     has-tostringtag "^1.0.0"
@@ -3330,6 +3364,14 @@ is-interactive@^1.0.0:
 
 is-map@^2.0.3:
   version "2.0.3"
+
+is-nan@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.npmjs.org/is-nan/-/is-nan-1.3.2.tgz"
+  integrity sha512-E+zBKpQ2t6MEo1VsonYmluk9NxGrbzpeeLC2xIViuO2EjU2xsXsBPwTr3Ykv9l08UYEVEdWeRZNouaZqF6RN0w==
+  dependencies:
+    call-bind "^1.0.0"
+    define-properties "^1.1.3"
 
 is-negative-zero@^2.0.3:
   version "2.0.3"
@@ -3382,7 +3424,7 @@ is-symbol@^1.0.2, is-symbol@^1.0.3:
   dependencies:
     has-symbols "^1.0.2"
 
-is-typed-array@^1.1.13:
+is-typed-array@^1.1.13, is-typed-array@^1.1.3:
   version "1.1.13"
   dependencies:
     which-typed-array "^1.1.14"
@@ -4287,6 +4329,14 @@ object-assign@^4.1.1:
 object-inspect@^1.13.1:
   version "1.13.2"
 
+object-is@^1.1.5:
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/object-is/-/object-is-1.1.6.tgz"
+  integrity sha512-F8cZ+KfGlSGi09lJT7/Nd6KJZ9ygtvYC0/UYYLI9nmQKLMnydpB9yvbv9K1uSkEu7FU9vYPmVwLg328tX+ot3Q==
+  dependencies:
+    call-bind "^1.0.7"
+    define-properties "^1.2.1"
+
 object-keys@^1.1.1:
   version "1.1.1"
 
@@ -4620,6 +4670,18 @@ react-native-image-picker@^7.1.2:
   resolved "https://registry.npmjs.org/react-native-image-picker/-/react-native-image-picker-7.1.2.tgz"
   integrity sha512-b5y5nP60RIPxlAXlptn2QwlIuZWCUDWa/YPUVjgHc0Ih60mRiOg1PSzf0IjHSLeOZShCpirpvSPGnDExIpTRUg==
 
+react-native-keyboard-area@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/react-native-keyboard-area/-/react-native-keyboard-area-1.0.6.tgz"
+  integrity sha512-soRpHc0dG+mvtWoL0sUzo0R6XQ12Ug5FSOfqlyqoTO4odtECL+/8tXrs+FpT0mvaf0hNMK7dh2OhCDqLq3w9SQ==
+  dependencies:
+    "@types/react-native" "0.62.16"
+
+react-native-linear-gradient@^2.8.3:
+  version "2.8.3"
+  resolved "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.8.3.tgz"
+  integrity sha512-KflAXZcEg54PXkLyflaSZQ3PJp4uC4whM7nT/Uot9m0e/qxFV3p6uor1983D1YOBJbJN7rrWdqIjq0T42jOJyA==
+
 react-native-modal-datetime-picker@^18.0.0:
   version "18.0.0"
   resolved "https://registry.npmjs.org/react-native-modal-datetime-picker/-/react-native-modal-datetime-picker-18.0.0.tgz"
@@ -4631,6 +4693,11 @@ react-native-pager-view@*, react-native-pager-view@^6.4.0, "react-native-pager-v
   version "6.4.0"
   resolved "https://registry.npmjs.org/react-native-pager-view/-/react-native-pager-view-6.4.0.tgz"
   integrity sha512-6nuzjN0tXJXyOqRU2f9ZHfGuaFR7sptpAV1eIZIkm2GPnpvZ50mawQ2HTMvM6Ezic+WbuiUryy76yUWLFcvsBw==
+
+react-native-pure-jwt@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/react-native-pure-jwt/-/react-native-pure-jwt-3.0.2.tgz"
+  integrity sha512-TbZ9JLCC33Ew2ENjovlDTFnNR7evUu5yKF4X5vLO5uO8FMMnBxS0mOUuUtAzlNPZ+tJQOKEoCyo43Hs1pTy+hA==
 
 react-native-reanimated@^3.15.0, "react-native-reanimated@>= 1.0.0":
   version "3.15.0"
@@ -4696,7 +4763,7 @@ react-native-vector-icons@^10.1.0:
     prop-types "^15.7.2"
     yargs "^16.1.1"
 
-react-native@*, "react-native@^0.0.0-0 || >=0.65 <1.0", react-native@>=0.44.1, react-native@>=0.65.0, react-native@0.75.2:
+react-native@*, "react-native@^0.0.0-0 || >=0.65 <1.0", react-native@>=0.41.2, react-native@>=0.44.1, react-native@>=0.59.5, react-native@>=0.65.0, react-native@0.75.2:
   version "0.75.2"
   dependencies:
     "@jest/create-cache-key-function" "^29.6.3"
@@ -4762,7 +4829,7 @@ react-test-renderer@18.3.1:
     react-shallow-renderer "^16.15.0"
     scheduler "^0.23.2"
 
-react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", react@^18.0, react@^18.2.0, react@^18.3.1, react@>=16.8, react@>=17.0.0, react@18.3.1:
+react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", react@^18.0, react@^18.2.0, react@^18.3.1, react@>=16.0.0, react@>=16.8, react@>=17.0.0, react@18.3.1:
   version "18.3.1"
   dependencies:
     loose-envify "^1.1.0"
@@ -5429,6 +5496,17 @@ use-sync-external-store@^1.0.0:
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
 
+util@^0.12.5:
+  version "0.12.5"
+  resolved "https://registry.npmjs.org/util/-/util-0.12.5.tgz"
+  integrity sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA==
+  dependencies:
+    inherits "^2.0.3"
+    is-arguments "^1.0.4"
+    is-generator-function "^1.0.7"
+    is-typed-array "^1.1.3"
+    which-typed-array "^1.1.2"
+
 utils-merge@1.0.1:
   version "1.0.1"
 
@@ -5508,7 +5586,7 @@ which-collection@^1.0.2:
 which-module@^2.0.0:
   version "2.0.1"
 
-which-typed-array@^1.1.14, which-typed-array@^1.1.15:
+which-typed-array@^1.1.14, which-typed-array@^1.1.15, which-typed-array@^1.1.2:
   version "1.1.15"
   dependencies:
     available-typed-arrays "^1.0.7"
@@ -5633,6 +5711,11 @@ yargs@^17.3.1, yargs@^17.6.2:
     string-width "^4.2.3"
     y18n "^5.0.5"
     yargs-parser "^21.1.1"
+
+yarn@^1.22.18:
+  version "1.22.22"
+  resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.22.tgz"
+  integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
 
 yocto-queue@^0.1.0:
   version "0.1.0"

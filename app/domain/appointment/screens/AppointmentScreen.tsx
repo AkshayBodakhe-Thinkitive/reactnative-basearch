@@ -5,7 +5,6 @@ import HeaderBg from '../../../components/HeaderBg/HeaderBg';
 import Header from '../../../components/Header/Header';
 import {AppointmentTobTabOptions} from '../constants/StringConstants';
 import {responsiveHeight} from 'react-native-responsive-dimensions';
-import UpcomingAppointments from './UpcomingAppointments';
 import CustomTopTab from '../../../navigation/TopTabNavigators/CustomTopTab';
 
 const AppointmentScreen = () => {

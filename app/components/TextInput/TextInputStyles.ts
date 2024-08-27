@@ -34,7 +34,7 @@ export const TextInputStyles = StyleSheet.create({
         color: colors.black,
         marginBottom: 10,
         fontFamily : FontType.Roboto_Medium,
-        fontSize: responsiveFontSize(12)
+        fontSize: responsiveFontSize(1.5)
     },
     inputBox: {
         fontFamily:FontType.Roboto_Medium,

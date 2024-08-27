@@ -24,6 +24,8 @@ import {
   responsiveHeight,
   responsiveFontSize,
 } from 'react-native-responsive-dimensions';
+import HomeScreen from '../../domain/home/screens/HomeScreen';
+import AppointmentScreen from '../../domain/appointment/screens/AppointmentScreen';
 // import HomeScreen from '../../domain/home/screens/HomeScreen';
 // import AppointmentScreen from '../../domain/appointment/screens/AppointmentScreen';
 // import ProfileScreen from '../../domain/profile/screens/ProfileScreen';
@@ -211,21 +213,7 @@ export default BottomBar;
 
 
 
-const HomeScreen = () => {
-  return (
-    <View>
-      <Text>BottomBar</Text>
-    </View>
-  )
-}
 
-const AppointmentScreen = () => {
-  return (
-    <View>
-      <Text>BottomBar</Text>
-    </View>
-  )
-}
 
 const ProfileScreen = () => {
   return (

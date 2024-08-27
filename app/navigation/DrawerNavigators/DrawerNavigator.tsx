@@ -15,6 +15,7 @@ import { useNavigation } from '@react-navigation/native';
 import { responsiveFontSize } from 'react-native-responsive-dimensions';
 
 import BottomBar from '../BottomNavigators/BottomBar';
+import CustomDrawerItem from './CustomDrawerItem';
 
 const Drawer = createDrawerNavigator();
 
@@ -108,17 +109,17 @@ const DrawerNavigator = () => {
           <View style={styles.drawerItemContainer} />
         </View>
 
-        {/* {drawerItems.map((item:any, index:any) => (
+        {drawerItems.map((item:any, index:any) => (
           <CustomDrawerItem
             key={index}
             label={item.label}
             icon={item.icon}
             onPress={item.onPress}
           />
-        ))} */}
+        ))}
         <View style={styles.drawerItemContainer} />
         <View>
-          {/* <CustomDrawerItem
+          <CustomDrawerItem
             label="Log Out"
             icon={<MaterialIcons name={'logout'} size={21} color={colors.grey66} />}
             onPress={() => setShowLogoutModal(!showLogoutModal)}
@@ -129,7 +130,7 @@ const DrawerNavigator = () => {
             onPress={() => {
               // navigation.navigate(AppNavConstants.SETTINGS);
             }}
-          /> */}
+          />
           <LogoutModal
             show={showLogoutModal}
             setShow={setShowLogoutModal}

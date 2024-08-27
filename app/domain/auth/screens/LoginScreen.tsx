@@ -49,6 +49,8 @@ const LoginScreen = () => {
   const handleSignIn = async () => {
     const errors: {[key: string]: string} = {};
 
+    navigation.navigate('Main')
+
     if (!username) {
       errors.username = 'username is required';
     }

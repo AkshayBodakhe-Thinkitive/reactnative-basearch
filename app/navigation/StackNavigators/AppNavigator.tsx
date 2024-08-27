@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Splashscreen from '../../domain/auth/screens/Splashscreen';
 import AuthNavigator from './AuthNavigator';
 import DrawerNavigator from '../DrawerNavigators/DrawerNavigator';
+import ProvidersListScreen from '../../domain/home/screens/ProvidersListScreen';
+import { AppNavConstants } from '../../constants/NavConstants';
 // import DrawerNavigator from '../DrawerNavigators/DrawerNavigator';
 // import ProvidersListScreen from '../../domain/home/screens/ProvidersListScreen';
 // import { AppNavConstants } from '../../constants/NavConstants';
@@ -21,12 +23,12 @@ const AppNavigator = () => {
         <Stack.Screen name="SplashScreen" component={Splashscreen} />
         <Stack.Screen name="Auth" component={AuthNavigator} />
         <Stack.Screen name="Main" component={DrawerNavigator} />
-        {/* <Stack.Screen
+      <Stack.Screen
           name={AppNavConstants.PROVIDER_LIST}
           component={ProvidersListScreen}
           options={{animation: 'none'}}
         />
-         <Stack.Screen
+        {/*    <Stack.Screen
           name={AppNavConstants.READY_TO_JOIN}
           component={ReadyToJoin}
           options={{headerShown: false}}

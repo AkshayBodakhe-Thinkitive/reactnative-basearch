@@ -30,7 +30,7 @@ export const ProfileScreenStyles = StyleSheet.create({
   },
   patDetailsContainer: {
     zIndex: -1,
-    height: responsiveHeight(13),
+    height: responsiveHeight(14),
     alignItems: 'center',
     paddingTop: responsiveHeight(7),
   },

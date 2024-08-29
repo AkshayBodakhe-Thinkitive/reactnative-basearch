@@ -45,14 +45,14 @@ export default function ProfileTabNavigator() {
             fontSize: responsiveFontSize(1.6),
             fontFamily: FontType.Roboto_Regular,
             textTransform: 'capitalize',
-            marginTop: responsiveHeight(1.5),
+            marginTop: responsiveHeight(0.5),
           }}
           style={{
             backgroundColor: '#0097F014',
             elevation:0,
             height:
               Platform.OS === 'android'
-                ? responsiveHeight(7)
+                ? responsiveHeight(6)
                 : responsiveHeight(6),
           }}
         />

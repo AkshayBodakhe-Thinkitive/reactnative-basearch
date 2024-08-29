@@ -21,7 +21,7 @@ const ProvidersListScreen = () => {
     <View style={styles.container}>
       <HeaderBg style={{height: responsiveHeight(20.7)}}>
         <Header title="Providers"></Header>
-        <View style={{paddingHorizontal: responsiveWidth(5), top: '-25%'}}>
+        <View style={{paddingHorizontal: responsiveWidth(5), top: '-15%'}}>
           <TextInput
             placeholder="Search Provider Name"
             ref={inputRef}

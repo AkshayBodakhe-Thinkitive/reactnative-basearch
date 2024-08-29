@@ -47,27 +47,9 @@ const LoginScreen = () => {
   };
 
   const handleSignIn = async () => {
-    const errors: {[key: string]: string} = {};
 
     navigation.navigate('Main')
 
-    if (!username) {
-      errors.username = 'username is required';
-    }
-    if (!password) {
-      errors.password = 'Password is required';
-    }
-
-    if (Object.keys(errors).length === 0) {
-      // const response = await dispatch(signInAction({username, password}));
-      navigation.navigate('Main')
-      const respose = 'OK';
-      if (!respose) {
-      
-      }
-    } else {
-      setErrors(errors);
-    }
   };
 
   return (

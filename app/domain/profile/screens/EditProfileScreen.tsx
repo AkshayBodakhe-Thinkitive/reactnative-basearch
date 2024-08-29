@@ -1,11 +1,12 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {colors} from '../../../constants/Colors';
 import HeaderBg from '../../../components/HeaderBg/HeaderBg';
 import Header from '../../../components/Header/Header';
 import ProfileImage from '../components/ProfileImageEdit/ProfileImageEdit';
 import {useNavigation} from '@react-navigation/native';
 import ProfileForm from '../components/ProfileForm/ProfileForm';
+import { requestCameraPermissions } from '../../../utils/androidpermissions';
 
 const staticEditProfileData = {
   firstName: 'John',
@@ -38,10 +39,10 @@ const EditProfileScreen = () => {
   const handleChange = (key: string, value: any) => {
     setEditProfileData((prevData: any) => ({...prevData, [key]: value}));
   };
-
-  //   const handleChange = (key: string, value: any) => {
-  //     // dispatch(fillEditProfileDataAction({key, value}));
-  //   };
+  
+  useEffect(()=>{
+    requestCameraPermissions()
+  },[])
 
   return (
     <View style={styles.container}>

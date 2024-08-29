@@ -28,7 +28,6 @@ export const ProviderListstyles = StyleSheet.create({
     alignSelf: 'center',
   },
   listContainer: {
-    marginTop: '-5%',
     padding: 10,
     marginBottom: 0,
     flex: 1,

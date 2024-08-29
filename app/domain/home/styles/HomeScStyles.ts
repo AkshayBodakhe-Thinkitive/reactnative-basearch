@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {colors} from '../../../constants/Colors';
-import { isIOS } from '../../../utils/DeviceUtils';
+import { isAndroid, isIOS } from '../../../utils/DeviceUtils';
 import { FontType } from '../../../constants/FontType';
 import { responsiveFontSize, responsiveHeight } from 'react-native-responsive-dimensions';
 
@@ -20,12 +20,11 @@ export const HomeScreenStyles = StyleSheet.create({
     zIndex: 1,
   },
   pageContainer: {
-    // marginBottom: isAndroid ? responsiveHeight(19) : responsiveHeight(10),
+    marginBottom: isAndroid ? responsiveHeight(19) : responsiveHeight(10),
 },
 scrollView: {
-    // paddingBottom: responsiveHeight(8),
-    // marginBottom: responsiveHeight(8),
-    // borderWidth:1
+    paddingBottom: responsiveHeight(5),
+    marginBottom: responsiveHeight(5),
 },
 homeBgContainer : {
     height: responsiveHeight(22),
@@ -51,7 +50,7 @@ logoText : {
 },
 welcomeTxt: {
     fontFamily: FontType.Roboto_Medium,
-    fontSize: responsiveFontSize(2.5),
+    fontSize: responsiveFontSize(2.2),
     marginVertical: '5%',
     color: colors.black,
     fontWeight:'500'

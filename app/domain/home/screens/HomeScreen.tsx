@@ -37,7 +37,6 @@ const HomeScreen = () => {
 
   const navigateToProviderFun = () => {
     inputRef.current.blur();
-    // navigation.navigate('providerlist', {focusOnSearch: true});
   };
 
   const optionsNavigation = (item: any) => {
@@ -119,6 +118,9 @@ const HomeScreen = () => {
                   keyExtractor={item => item.id.toString()}
                   horizontal={false}
                   numColumns={3}
+                  columnWrapperStyle={{
+                  marginVertical:5
+                  }}
                   contentContainerStyle={{
                     paddingVertical: 10,
                   }}

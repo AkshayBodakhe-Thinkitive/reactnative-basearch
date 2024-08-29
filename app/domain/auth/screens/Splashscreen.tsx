@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { colors } from '../../../constants/Colors';
 
 const SplashScreen = ({ navigation }:any) => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 24,
     fontWeight: 'bold',
+    color : colors.darkGrey
   },
 });
 

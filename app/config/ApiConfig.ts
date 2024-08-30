@@ -1,6 +1,5 @@
 
 
-import { logoutAction } from "../../../../../Desktop/METSL/app/screens/authentication/store/async-actions/logoutAction"
 import { instance, post } from "./AxiosConfig"
 
 export function addTokenToAxiosInstance(
@@ -48,7 +47,7 @@ instance.interceptors.response.use(
     if (error.response && error.response.status) {
       if (error.response.status === 401) {
         RefreshTokenHelper();
-        store.dispatch(logoutAction())
+        // store.dispatch(logoutAction())
       }
     }
     return Promise.reject(error);

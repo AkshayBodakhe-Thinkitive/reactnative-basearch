@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import AppNavigator from './app/navigation/StackNavigators/AppNavigator'
 import { ZoomVideoSdkProvider } from '@zoom/react-native-videosdk'
+import AppNative from './app/native/AppNative'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
             enableLog: true,
           }}>
       <AppNavigator/>
+      {/* <AppNative/> */}
       </ZoomVideoSdkProvider>
     </View>
   )

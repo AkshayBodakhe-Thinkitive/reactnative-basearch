@@ -1160,6 +1160,10 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
+  - rtn-calculator (0.0.1):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
   - ZoomVideoSDK/CptShare (1.11.10)
@@ -1253,6 +1257,7 @@ DEPENDENCIES:
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - rtn-calculator (from `../node_modules/rtn-calculator`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1396,6 +1401,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-svg"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
+  rtn-calculator:
+    :path: "../node_modules/rtn-calculator"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1474,6 +1481,7 @@ SPEC CHECKSUMS:
   RNScreens: f0edd01b3ab160acc31fb056622a1d7c2909a0a5
   RNSVG: a48668fd382115bc89761ce291a81c4ca5f2fd2e
   RNVectorIcons: d9fb2ffc051a345631473b99f36b3add2dd547d4
+  rtn-calculator: 54aa89d9abca57d114f4e7019d8f90c3fb54a981
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 44003f970aa541b79dfdd59cf236fda41bd5890f
   ZoomVideoSDK: 239dfda5dc7fe026ed39c995a7d955def28907c4
